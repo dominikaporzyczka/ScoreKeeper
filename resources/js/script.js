@@ -5,16 +5,34 @@ var playerTwoDisplay = document.querySelector("#playerTwoDisplay");
 var playerOneScore = 0;
 var playerTwoScore = 0;
 
+var gameOver = false;
+var winningScore = 5;
+
 var resetBtn = document.querySelector("#reset");
 
 
 playerOneBtn.addEventListener("click", function() {
-    playerOneScore++;
-    playerOneDisplay.textContent = playerOneScore;
+    if(!gameOver) {
+        playerOneScore++;
+            if(playerOneScore === winningScore) {
+                playerOneDisplay.classList.add("winner");
+                gameOver = true;
+            }
+
+        playerOneDisplay.textContent = playerOneScore;
+    }
+    
 });
 
 playerTwoBtn.addEventListener("click", function() {
-    playerTwoScore++;
-    playerTwoDisplay.textContent = playerTwoScore;
+    if(!gameOver) {
+        playerTwoScore++;
+            if(playerTwoScore === winningScore) {
+                playerTwoDisplay.classList.add("winner");
+                gameOver = true;
+            }
+        playerTwoDisplay.textContent = playerTwoScore;
+    }
+   
 });
 
