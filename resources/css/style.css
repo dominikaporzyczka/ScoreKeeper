@@ -1,3 +1,25 @@
+body {
+    font-family: 'Rammetto One', cursive;
+    font-size: 20px;
+}
+
+.container {
+    margin-top: 2%;
+}
+
+.form-group {
+    display: inline-block;
+    margin-bottom: 5%;
+}
+
 .winner {
-    color: green;
+    color: #2980b9;
+}
+
+.row {
+    text-align: center;
+}
+
+.score {
+    font-size: 5em;
 }
