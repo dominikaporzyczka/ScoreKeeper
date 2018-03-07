@@ -5,7 +5,7 @@ The project has been created during the Udacity course -> The Web Developer Boot
 ## Demo
 https://dominikaporzyczka.github.io/ScoreKeeper/
 
-## Technogies
+## Technologies
 
 * HTML
 * CSS3
